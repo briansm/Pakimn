@@ -18,12 +18,11 @@ class Pakiman{
   }
 
   mostrar(){
-    document.write("<p>");
     document.body.appendChild(this.imagen);
-    document.write("<strong>"+this.nombre+"</strong><br/>");
+    document.write("<br/><strong>"+this.nombre+"</strong><br/>");
     document.write("Vida: "+this.vida+"<br/>");
-    document.write("Ataque: "+this.ataque);
-    document.write("<p>");
+    document.write("Ataque: "+this.ataque+"<hr/>");
+
   }
 }
 
@@ -31,3 +30,5 @@ var cauchin=new Pakiman("Cauchin",100,30);
 var pokacho=new Pakiman("Pokacho",80,50);
 var tocinauro=new Pakiman("Tocinauro",120,40);
 pokacho.mostrar();
+cauchin.mostrar();
+tocinauro.mostrar();
