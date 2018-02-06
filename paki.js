@@ -1,8 +1,16 @@
+//Variables globales
+var imagenes=[];
+imagenes["Cauchin"]="vaca.png";
+imagenes["Pokacho"]="pollo.png";
+imagenes["Tocinauro"]="cerdo.png";
 class Pakiman{
   constructor(n,v,a){
+    this.imagen=new Image();
     this.nombre=n;
     this.vida=v;
     this.ataque=a;
+
+    this.imagen.src=imagenes[this.nombre];
   }
   //Dentro de la clase no es necesario colocar 'function'
   hablar(){
